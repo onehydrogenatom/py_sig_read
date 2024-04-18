@@ -2,7 +2,7 @@ from google.cloud import vision
 import os
 from pdf2image import convert_from_path
 
-os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/Users/bendw/Downloads/arkidssig-37345b404336.json'
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = 'YOURJSONPATH'
 
 def detect_document(path):
     # Check if Path Exists
@@ -40,5 +40,5 @@ def detect_document(path):
         print(f"Extracted text from page {i+1}:\n{text}")
 
 # Call the function with the path to your PDF file
-detect_document('//Users//bendw//PycharmProjects//file_combine_ArKids//merged.pdf')
+detect_document('YOURPDFFILEPATH')
 
